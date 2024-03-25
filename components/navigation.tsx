@@ -6,7 +6,7 @@ import styles from "../styles/navigation.module.css";
 export default function Navigation() {
     const path = usePathname();
     return <nav className={styles.nav}>
-        <ul className={styles.list}>
+        <ul>
             <li>
                 <Link href="/">Home</Link> {path === "/" ? "😎" : ""}
             </li>
