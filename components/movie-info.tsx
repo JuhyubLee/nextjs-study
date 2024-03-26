@@ -1,6 +1,6 @@
 import styles from "../styles/movie-info.module.css"
+import {API_URL} from "../app/constants";
 export async function getMovie(id: string) {
-    const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
     console.log(`Fetching movies : ${Date.now()}`)
     // await new Promise((resolve) => setTimeout(resolve, 3000));
     const response = await fetch(`${API_URL}/${id}`);
