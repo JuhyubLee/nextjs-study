@@ -1,5 +1,5 @@
 import styles from "../styles/movie-info.module.css"
-async function getMovie(id: string) {
+export async function getMovie(id: string) {
     const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
     console.log(`Fetching movies : ${Date.now()}`)
     // await new Promise((resolve) => setTimeout(resolve, 3000));
